@@ -1,0 +1,48 @@
+@font-face {
+  src: url(../fonts/NeueHaasUnica-Regular.woff);
+  font-family: 'Neue Haas Unica';
+}
+
+html, body {
+  width: 100vw;
+}
+
+body {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-size: .75rem;
+  letter-spacing: 0.125;
+  background-color: #f1f1f1;
+  color: #313131;
+  padding: .75rem;
+}
+
+body h1 {
+  font-size: 1rem;
+  letter-spacing: 0.05;
+}
+
+body #draggable {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #draggable img {
+  width: 20vw;
+}
+
+body #draggable p {
+  text-align: center;
+  margin-top: -1vw;
+  text-transform: uppercase;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */
