@@ -9,7 +9,8 @@ html, body {
 
 body {
   font-family: 'Neue Haas Unica', sans-serif;
-  font-size: .75rem;
+  font-size: .85rem;
+  line-height: 1.125;
   background-color: #f1f1f1;
   color: #313131;
   padding: .5rem;
@@ -20,34 +21,46 @@ body h1 {
   letter-spacing: -0.15;
 }
 
+body h2 {
+  font-size: 1rem;
+  letter-spacing: -0.15;
+}
+
 body .sml {
-  font-size: .75rem;
+  font-size: .85rem;
+  margin-right: 2rem;
 }
 
-body .sml::after {
-  content: ' ';
-}
-
-body #draggable {
-  position: absolute;
+body .container1 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-body #draggable img {
+body .container1 #draggable1, body .container1 #draggable2, body .container1 #draggable3 {
+  position: absolute;
+}
+
+body .container1 #draggable1 img, body .container1 #draggable2 img, body .container1 #draggable3 img {
   width: 20vw;
 }
 
-body #draggable p {
+body .container1 #draggable1 p, body .container1 #draggable2 p, body .container1 #draggable3 p {
   text-align: center;
-  margin-top: -1vw;
+  margin-top: -2vw;
   text-transform: uppercase;
   letter-spacing: 0.15;
+}
+
+body .container1 #draggable1 #draggableheader:hover, body .container1 #draggable2 #draggableheader:hover, body .container1 #draggable3 #draggableheader:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: .35s;
+  transition: .35s;
 }
 
 .margin-bottom {

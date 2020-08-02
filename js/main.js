@@ -1,4 +1,6 @@
-dragElement(document.getElementById("draggable"));
+dragElement(document.getElementById("draggable1"));
+dragElement(document.getElementById("draggable2"));
+dragElement(document.getElementById("draggable3"));
 
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

@@ -10,7 +10,8 @@ html, body {
 
 body {
     font-family: 'Neue Haas Unica', sans-serif;
-    font-size: .75rem;
+    font-size: .85rem;
+    line-height: 1.125;
     background-color: #f1f1f1;
     color: #313131;
     padding: .5rem;
@@ -19,27 +20,37 @@ body {
         font-size: 1rem;
         letter-spacing: -0.15;
     }
-    .sml {
-        font-size: .75rem;
+    h2 {
+        font-size: 1rem;
+        letter-spacing: -0.15;
     }
-    .sml::after {
-        content: ' ';
+    .sml {
+        font-size: .85rem;
+        margin-right: 2rem;
     }
 
-    #draggable {
-        position: absolute;
+    .container1 {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
 
-        img {
-            width: 20vw;
-        }
-        p {
-            text-align: center;
-            margin-top: -1vw;
-            text-transform: uppercase;
-            letter-spacing: 0.15;
+        #draggable1, #draggable2, #draggable3 {
+            position: absolute;
+    
+            img {
+                width: 20vw;
+            }
+            p {
+                text-align: center;
+                margin-top: -2vw;
+                text-transform: uppercase;
+                letter-spacing: 0.15;
+            }
+    
+            #draggableheader:hover {
+                transform: scale(1.15);
+                transition: .35s;
+            }
         }
     }
 }
