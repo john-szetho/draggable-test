@@ -10,7 +10,7 @@ html, body {
 body {
   font-family: 'Neue Haas Unica', sans-serif;
   font-size: .85rem;
-  line-height: 1.125;
+  line-height: 1.195;
   background-color: #f1f1f1;
   color: #313131;
   padding: .5rem;
@@ -31,32 +31,46 @@ body .sml {
   margin-right: 2rem;
 }
 
-body .container1 {
+body .container-outer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .container1 #draggable1, body .container1 #draggable2, body .container1 #draggable3 {
+body .container-outer .container {
+  width: 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container-outer .container #draggable1, body .container-outer .container #draggable2, body .container-outer .container #draggable3 {
   position: absolute;
 }
 
-body .container1 #draggable1 img, body .container1 #draggable2 img, body .container1 #draggable3 img {
+body .container-outer .container #draggable1 img, body .container-outer .container #draggable2 img, body .container-outer .container #draggable3 img {
   width: 20vw;
 }
 
-body .container1 #draggable1 p, body .container1 #draggable2 p, body .container1 #draggable3 p {
+body .container-outer .container #draggable1 p, body .container-outer .container #draggable2 p, body .container-outer .container #draggable3 p {
   text-align: center;
   margin-top: -2vw;
   text-transform: uppercase;
   letter-spacing: 0.15;
 }
 
-body .container1 #draggable1 #draggableheader:hover, body .container1 #draggable2 #draggableheader:hover, body .container1 #draggable3 #draggableheader:hover {
+body .container-outer .container #draggable1 #draggableheader:hover, body .container-outer .container #draggable2 #draggableheader:hover, body .container-outer .container #draggable3 #draggableheader:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-transition: .35s;

@@ -8,26 +8,34 @@
 </head>
 <body>
     <h1>Draggable HTML element test</h1>
-    <h2><span class="sml">¶</span>DIV id="draggable"</h2>
-    <h2><span class="sml">¶</span>Nested DIV id="draggableheader"</h2>
+    <h2><span class="sml">¶</span>Parent div class="containerouter"</h2>
+    <h2><span class="sml">¶</span>Child div class="container"</h2>
+    <h2><span class="sml">¶</span>Child div id="draggable"</h2>
+    <h2><span class="sml">¶</span>Child div id="draggableheader"</h2>
     <h2 class="margin-bottom"><span class="sml">¶</span>Hover transform: scale 1.15 + transition time .35s</h2>
-    <div class="container1">
-        <div id="draggable1">
-            <div id="draggableheader">
-                <img src="../images/memoji.png" alt="">
-                <p>Drag me</p>
+    <div class="container-outer">
+        <div class="container">
+            <div id="draggable1">
+                <div id="draggableheader">
+                    <img src="../images/memoji.png" alt="">
+                    <p>Drag me</p>
+                </div>
             </div>
         </div>
-        <div id="draggable2">
-            <div id="draggableheader">
-                <img src="../images/dolphin.png" alt="">
-                <p>Drag me</p>
+        <div class="container">
+            <div id="draggable2">
+                <div id="draggableheader">
+                    <img src="../images/dolphin.png" alt="">
+                    <p>Drag me</p>
+                </div>
             </div>
         </div>
-        <div id="draggable3">
-            <div id="draggableheader">
-                <img src="../images/sea-otters.png" alt="">
-                <p>Drag me</p>
+        <div class="container">
+            <div id="draggable3">
+                <div id="draggableheader">
+                    <img src="../images/sea-otters.png" alt="">
+                    <p>Drag me</p>
+                </div>
             </div>
         </div>
     </div>
